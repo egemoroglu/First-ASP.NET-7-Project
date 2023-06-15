@@ -1,0 +1,32 @@
+﻿@model IEnumerable<FinalProject.Models.Comment>
+<h2>
+
+    adminpage
+
+</h2>
+<table class="table table-bordered">
+
+    <tr>
+        <th>Name</th>
+        <th>e-mail</th>
+        <th>Phone number</th>
+        <th>Message</th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.fullName</td>
+            <td>@item.email</td>
+            <td>@item.phoneNum</td>
+            <td>@item.message</td>
+        </tr>
+       
+    }
+
+
+
+</table>
+
+
